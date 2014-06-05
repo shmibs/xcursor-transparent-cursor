@@ -63,9 +63,15 @@ names=(
 
 cd $(dirname "$0")
 
-echo "clean folders..."
-rm -r ./cursors
-rm -r ./source
+if [ -e cursors ] || [ -e source ]; then 
+	echo "clean folders..."
+	if [ -e cursors ]; then
+		rm -r cursors
+	fi
+	if [ -e source ]; then
+		rm -r source
+	fi
+fi
 mkdir cursors
 mkdir source
 
