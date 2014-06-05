@@ -61,6 +61,10 @@ names=(
 "cross_reverse"                     "openhand"                          "zoom-in"
 "d9ce0ab605698f320427677b458ad60b"  "pencil"                            "zoom-out" )
 
+command -v xcursorgen >/dev/null && continue ||\
+	{ echo "xcursorgen not found"; exit 1; }
+
+
 cd $(dirname "$0")
 
 if [ -e cursors ] || [ -e source ]; then 
