@@ -1,4 +1,4 @@
-#!/bin/env zsh
+#!/bin/sh
 names=( 
 "00000000000000020006000e7e9ffc3f"  "default"                           "pirate"
 "00008160000006810000408080010102"  "diamond_cross"                     "plus"
